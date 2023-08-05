@@ -1,4 +1,3 @@
-#include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 
 int main( void )
@@ -9,5 +8,5 @@ int main( void )
     aporlo.attack("Hi");
     meji.attack("Hello");
     meji.guardGate();
-    
+    return 0;
 }
