@@ -33,13 +33,16 @@ void    FragTrap::attack( const std::string &target)
 {
     std::string		name = this->_name;
     this->_energy -= 1;
-    if (this->_energy <= 0)
+    if (this->_energy <= 0 || this->_hit < 0)
     {
-        std::cout << "FragTrap" << this->_name << "has no energy" << std::endl;
+        std::cout << this->_name << " has no energy" << std::endl;
         return;
     }
-    std::cout << "FragTrap " << this->_name << " attacks " << target
+    else
+    {
+        std::cout << "FragTrap " << this->_name << " attacks " << target
         << ", causing " << this->_attackDamage << " points of damage!" << std::endl;
+    }
 }
 
 void    FragTrap::highFivesGuys()

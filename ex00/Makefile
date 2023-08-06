@@ -4,7 +4,7 @@ CPPFLAGS = -std=c++98 -Wall -Wextra -Werror
 
 BUILD_DIR = build
 
-SRCS =	main.cpp Claptrap.cpp
+SRCS =	main.cpp ClapTrap.cpp
 
 OBJS = $(SRCS:%.cpp=$(BUILD_DIR)/%.o)
 
