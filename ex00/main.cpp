@@ -7,7 +7,6 @@ int main( void )
     claptrap.attack("Wow");
     claptrap.takeDamage(8);
     claptrap.beRepaired(17);
-    claptrap.attack("hi");
     claptrap.takeDamage(19);
     return 0;
 }
